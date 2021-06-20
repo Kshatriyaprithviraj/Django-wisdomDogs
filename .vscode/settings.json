@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "/home/prithvi/.local/share/virtualenvs/learning-django-q4se3T84/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false
+}

@@ -1,0 +1,34 @@
+{% extends "base.html" %} {% block content %}
+<div style="font-size: x-large">
+  {% for pet in pets %}
+  <div class="petname">
+    <a
+      href="{% url 'pet_detail' pet.id %}"
+      style="
+        cursor: pointer;
+        font-size: x-large;
+        text-decoration: none;
+        color: black;
+      "
+    >
+      <h3>{{ pet.name|capfirst }}</h3>
+    </a>
+    <p>
+      <b style="font-size: x-large">Species:</b><br />{{ pet.species|capfirst}}
+    </p>
+    {% if pet.breed %}
+    <p>
+      <b style="font-size: x-large">Breed:</b><br />
+      {{ pet.breed|capfirst}}
+    </p>
+    {% endif %} {% if pet.age %}
+    <p><b style="font-size: x-large">Age:</b><br />{{ pet.age}}</p>
+    {% endif %}
+    <p class="hidden">
+      <b style="font-size: x-large">Description: </b><br />{{ pet.description }}
+    </p>
+    <hr />
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
