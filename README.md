@@ -1,4 +1,4 @@
-# Django-webapp Wisdomdogs 🐶
+# Wisdomdogs 🐶  Django-webapp
 A simple webapp created using django3 for dogs. 😃
 
 # To try / run ➡️
